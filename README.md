@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Links for code tests
+
+- [Angular 7 how to calculate the time a component take to completely load on the DOM](https://stackoverflow.com/questions/53762813/angular-7-how-to-calculate-the-time-a-component-take-to-completely-load-on-the-d)
+
+- [Route to fully rendered change detection](https://dev.to/herodevs/route-fully-rendered-detection-in-angular-2nh4)
+
+## Strict Checking
+
+- [TypeScript strictly typed: strict mode is not enough](https://medium.com/@cyrilletuzi/typescript-strictly-typed-strict-mode-is-not-enough-40df698e2deb)
+
+### Automated Configuration
+
+- Just run `npx typescript-strictly-typed` and you're done!
