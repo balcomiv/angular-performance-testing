@@ -2,6 +2,7 @@ import {
   AfterContentInit,
   AfterViewInit,
   Directive,
+  Host,
   OnInit,
 } from '@angular/core';
 import { TestLoadTimeComponent } from '../components/test-load-time/test-load-time.component';
@@ -15,7 +16,7 @@ import { TestLoadTimeComponent } from '../components/test-load-time/test-load-ti
 export class CalcLoadTimeDirective
   implements OnInit, AfterContentInit, AfterViewInit {
   //  constructor(@Inject('TestComponent') private host: TestLoadComponent) {}
-  constructor(private host: TestLoadTimeComponent) {}
+  constructor(@Host() private host: TestLoadTimeComponent) {}
 
   ngOnInit() {
     this.print('onInit');
