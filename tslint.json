@@ -147,6 +147,8 @@
       "element",
       "app",
       "kebab-case"
-    ]
+    ],
+    "no-any": true,
+    "template-no-any": true
   }
 }

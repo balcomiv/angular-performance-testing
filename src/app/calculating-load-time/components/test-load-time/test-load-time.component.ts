@@ -20,10 +20,10 @@ import {
 })
 export class TestLoadTimeComponent
   implements OnInit, AfterContentInit, AfterViewInit {
-  startTime: number;
-  initTime: number;
-  contentInitTime: number;
-  viewInitTime: number;
+  startTime: number | null = null;
+  initTime: number | null = null;
+  contentInitTime: number | null = null;
+  viewInitTime: number | null = null;
 
   //  Created
   constructor() {
@@ -49,7 +49,12 @@ export class TestLoadTimeComponent
     this.printTime('ngAfterViewInit', this.initTime);
   }
 
-  private printTime(lifeCycle: string, time: number) {
+  private printTime(lifeCycle: string, time: number | null) {
+    if (!this.startTime || !time) {
+      console.error('Invalid time value', time);
+      return;
+    }
+
     console.log(`============= ${lifeCycle} =================`);
     console.log(`Global loading ${time}ms`);
     console.log(`Global loading ${time / 1000}s`);
